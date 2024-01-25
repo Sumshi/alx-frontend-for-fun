@@ -241,6 +241,7 @@ template {
     /** HEADER **/
     --header-padding: 4rem 0 0;
 
+
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
 
@@ -360,15 +361,13 @@ a:active {
 
 /* Grid
       ============================= */
-.row {
-    display: flex;
-}
 
 ul.row {
     margin: -1rem;
     padding: 0;
     list-style: none;
 }
+
 
 [class*='col-'] {
     margin: 1rem;
@@ -382,8 +381,13 @@ ul.row {
     width: calc((100% / 2) - 2rem);
 }
 
+.row {
+    display: flex;
+}
+
 /* Navbar
       ============================= */
+
 
 
 .nav {
@@ -401,7 +405,7 @@ ul.row {
     letter-spacing: var(--nav-item-letter-spacing);
 }
 
-.nav .nav-item +.nav-item {
+.nav .nav-item+.nav-item {
     margin: var(--nav-item-margin);
 }
 
@@ -435,12 +439,6 @@ ul.row {
 /* Header
       ============================= */
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header {
     padding: var(--header-padding);
     position: relative;
@@ -448,6 +446,12 @@ ul.row {
     background: transparent;
 }
 
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Footer
       ============================= */
@@ -551,6 +555,7 @@ ul.row {
     min-height: 50vh;
 }
 
+
 /* Section Latest news ============================= */
 .section-latest-news .row {
     flex-direction: row-reverse;
@@ -561,10 +566,12 @@ ul.row {
     flex-wrap: wrap;
 }
 
-/* Section ABOUT US =============================*/
+/* Section ABOUT US ============================= */
 .section-about-us [class*='col-'] {
     align-self: center;
 }
+
+
 
 
 /*** 4. CARD ***/
